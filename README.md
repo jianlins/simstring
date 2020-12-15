@@ -1,3 +1,7 @@
+# NOTE
+
+This is a modified version of a QuickUMLS clone of simstring.  This was modified to ensure continued support on Windows.
+
 # SimString Python Package
 
 Orginal version by [chokkan](https://github.com/chokkan/simstring). New version (compiles under macOS) from [here](https://github.com/blinkhealth/simstring-python-package)

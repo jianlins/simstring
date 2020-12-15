@@ -124,17 +124,17 @@ simstring_module = Extension(
     )
 
 setup(
-    name = 'quickumls_simstring',
-    url = 'https://github.com/Georgetown-IR-Lab/simstring',
-    version = '1.1.5r2',
+    name = 'medspacy_simstring',
+    url = 'https://github.com/medspacy/simstring',
+    version = '2.1',
     description=(
-        'Clone of simstring designed to work with QuickUMLS. ' 
+        'Clone of simstring for medspacy which was cloned from another clone designed to work with QuickUMLS. ' 
         'Original version here: http://chokkan.org/software/simstring/'
     ),
     long_description=readme,
     packages=['quickumls_simstring'],
-    author = 'Naoaki Okazaki & Blink Health & Luca Soldaini',
-    author_email = 'luca@ir.cs.georgetown.edu',
+    author = 'Naoaki Okazaki & Blink Health & Luca Soldaini & Kelly Peterson',
+    author_email = 'luca@ir.cs.georgetown.edu,kelly.peterson@hsc.utah.edu',
     ext_modules = [simstring_module],
     cmdclass={
         'install_lib': _CommandInstallCythonized,
