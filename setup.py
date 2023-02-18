@@ -126,7 +126,7 @@ simstring_module = Extension(
 setup(
     name = 'medspacy_simstring',
     url = 'https://github.com/medspacy/simstring',
-    version = '2.1',
+    version = '2.2a',
     description=(
         'Clone of simstring for medspacy which was cloned from another clone designed to work with QuickUMLS. ' 
         'Original version here: http://chokkan.org/software/simstring/'
