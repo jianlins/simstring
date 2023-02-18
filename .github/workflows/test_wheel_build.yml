@@ -148,13 +148,6 @@ jobs:
     # alternatively, to publish when a GitHub Release is created, use the following rule:
     # if: github.event_name == 'release' && github.event.action == 'published'
     steps:
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.8'
-      
-      - name: Install dependencies
-        run: |
-          pip install twine
 
       - uses: actions/download-artifact@v3
         with:
