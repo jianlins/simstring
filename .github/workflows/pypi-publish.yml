@@ -1,4 +1,4 @@
-name: test_wheel_build
+name: pypi-publish
 on:
   workflow_dispatch
 
