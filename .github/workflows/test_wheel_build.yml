@@ -140,7 +140,6 @@ jobs:
           
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ matrix.python-version[1] }}-${{ matrix.buildplat[1] }}
           path: ./dist/*.tar.gz
 
   upload_pypi:
