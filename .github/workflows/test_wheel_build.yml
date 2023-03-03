@@ -115,7 +115,6 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ matrix.python-version[1] }}-${{ matrix.buildplat[1] }}
           path: ./dist/*.whl
           
 
@@ -138,7 +137,11 @@ jobs:
         run: |
           python setup.py sdist
           ls dist
-
+          
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.python-version[1] }}-${{ matrix.buildplat[1] }}
+          path: ./dist/*.tar.gz
 
   upload_pypi:
     needs: [build_windows, build_sdist]
