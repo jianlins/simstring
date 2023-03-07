@@ -139,5 +139,6 @@ setup(
     cmdclass={
         'install_lib': _CommandInstallCythonized,
     },
+    package_data={'': ['*.pyx', '*.pxd', '*.so', '*.dll', '*.lib', '*.cpp', '*.c']},
 )
 
