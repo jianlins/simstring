@@ -1,4 +1,4 @@
-name: test_wheel_build
+name: test_wheel_build_win
 on:
   workflow_dispatch
 
