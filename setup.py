@@ -88,7 +88,9 @@ elif sys.platform.startswith("win"):
     if use_existing_libiconv:
         libs = ['iconv.lib']
         additional_include_dirs = [include_dir]
+        print('additional_include_dirs', additional_include_dirs)
         library_dirs = [lib_dir]
+        print('library_dirs', library_dirs)
         # The = at the end of this with nothing after causes the symbol to have no associated value (instead of 'const')
         # so that this will compile under MSVC more info here:
         # https://docs.microsoft.com/en-us/cpp/build/reference/d-preprocessor-definitions?view=vs-2017
